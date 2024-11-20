@@ -171,18 +171,20 @@ wsl --update
 ```
 
 ## Reinstall Ubuntu, Debian and Docker images. THIS WILL RESULT IN LOST DATA if you have not save data on your host machine!
-???+ danger "Danger: data lost!"
-    THIS WILL RESULT IN DATA LOST if you have not saved data on your host machine!
-    ```bash
-    Stop-Process -Name "Docker Desktop" -Force
-    wsl --unregister Ubuntu-24.04
-    wsl --unregister Ubuntu
-    wsl --unregister Debian
-    wsl --unregister docker-desktop-data
-    wsl --unregister docker-desktop
-    wsl --set-default-version 2
-    wsl --install --web-download --distribution Ubuntu-24.04
-    ```
+> [!Caution] 
+>    THIS WILL RESULT IN DATA LOST if you have not saved data on your host machine!
+    
+```bash
+Stop-Process -Name "Docker Desktop" -Force
+wsl --unregister Ubuntu-24.04
+wsl --unregister Ubuntu
+wsl --unregister Debian
+wsl --unregister docker-desktop-data
+wsl --unregister docker-desktop
+wsl --set-default-version 2
+wsl --install --web-download --distribution Ubuntu-24.04
+```
+
 Now we need to update WSL Ubuntu-24.04 to update
 ```bash
 wsl -d Ubuntu-24.04 -u root bash -c 'apt update ; apt upgrade -y'

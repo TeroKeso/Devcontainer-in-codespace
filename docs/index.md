@@ -90,7 +90,7 @@ If you already have a **GitHub account**, you can sign in and if you don't have 
   - You might have access to educational resources for students or discounts. 
   
 ***Mandatory for all*** <br>
-!!! warning
+> [!Important]  
     Mandatory for all
 
   You are required to link your school email to your personal GitHub account. Please follow the instructions below: 
