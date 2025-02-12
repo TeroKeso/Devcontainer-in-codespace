@@ -1,6 +1,6 @@
 {
     "name": "Ubuntu with Docker",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "image": "ubuntu/python",
 
     "remoteUser": "vscode",
     "customizations": {
